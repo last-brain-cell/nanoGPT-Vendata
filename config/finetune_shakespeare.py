@@ -1,6 +1,6 @@
 import time
 
-out_dir = 'out-shakespeare'
+out_dir = 'out-'
 eval_interval = 5
 eval_iters = 10
 wandb_log = False # feel free to turn on

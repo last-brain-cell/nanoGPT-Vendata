@@ -4,11 +4,11 @@ import tiktoken
 import numpy as np
 
 # download the tiny shakespeare dataset
-input_file_path = os.path.join(os.path.dirname(__file__), '/kaggle/working/nanoGPT-Vendata/data/shakespeare/input.txt')
+input_file_path = os.path.join(os.path.dirname(__file__), 'input.txt')
 # if not os.path.exists(input_file_path):
 #     data_url = 'https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt'
 with open(input_file_path, 'w', encoding='utf-8') as f:  # Specify UTF-8 encoding
-    with open("/kaggle/working/nanoGPT-Vendata/data/shakespeare/data.txt", "r", encoding="utf-8") as f1:
+    with open("data.txt", "r", encoding="utf-8") as f1:
         f.write(f1.read())
 
 with open(input_file_path, 'r', encoding='utf-8') as f:  # Specify UTF-8 encoding
